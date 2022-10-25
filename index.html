@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASKETBALL SCOREBOARD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
+                
+</head>
+<body>
+    <div class="scoreboard-parent">
+        <div class="container">
+
+            <div class="scoreboard-main-flex">
+                <div class="scoreboard-home">
+                    <h1 id= "homey"class="home-h1">
+                        HOME TEAM
+                    </h1>
+                    <span id="home-score">00</span>
+                    <div class="score-btns">
+                        <button id="home-add-1" onclick="addOne()" >+1</button> 
+                        <button class="home-add-2" onclick="addTwo()">+2</button> 
+                        <button class="home-add-3" onclick="addThree()">+3</button>
+                    </div>
+                </div>
+                <div class="scoreboard-away">
+                    <h1 id="awayh1"class="away-h1">
+                        AWAY TEAM
+                    </h1>
+                    <span id="away-score">00</span>
+                    <div class="score-btns">
+                        <button class="away-add-1" onclick="addOneToAway()">+1</button>
+                        <button class="away-add-2" onclick="addTwoToAway()">+2</button>
+                        <button class="away-add-3" onclick="addThreeToAway()">+3</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn">
+                <button class="new-game-btn" onclick="checkScores()">CHECK SCORES</button>
+                <button class="new-game-btn" onclick="newGame()">NEW GAME</button>
+            </div>
+            <div class="show-scores">
+                <h3 id="save-el"></h3>
+            </div>
+
+        </div>
+    </div>
+    <h1 id="winning"></h1>
+    <script src="script.js"></script>
+</body>
+</html>

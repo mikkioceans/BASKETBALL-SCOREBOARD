@@ -1,0 +1,122 @@
+/*body {
+    background-color: #111827;
+}*/
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.scoreboard-parent {
+    padding: 150px 0;
+    background-color: #111827;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.scoreboard-main-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.new-game-btn {
+    padding: 1em 2em;
+    display: inline-block;
+    border: 2px #ffff solid;
+    text-align: center;
+    background: transparent;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 10px;
+    
+}
+.new-game-btn:hover {
+    background-color: #fff;
+    color: #111827;
+    transition: 1s;
+}
+
+.btn {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  
+    
+}
+
+#away-score , #home-score {
+    display: inline-block;
+    height: 120px;
+    width: 180px;
+    background-color: #000;
+    text-align: center;
+    color: #F94F6D;
+    font-size: 110px;
+    align-items: center;
+    font-family: 'TheGoodMonolith', sans-serif;
+                                                
+}
+
+.home-h1 , .away-h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.scoreboard-home , .scoreboard-away {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.score-btns {
+    margin-top: 20px;
+    align-items: center;
+    
+    display: flex;
+    justify-content: center;
+}
+#home-add-1 , .home-add-2,.home-add-3 , .away-add-1 , .away-add-2 , .away-add-3{
+    
+    border: solid 2px white;
+    font-size: 20px;
+    margin-right: .3em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'TheGoodMonolith', sans-serif;
+    padding: .3em;
+    background: transparent;
+    color: white;
+}
+
+.show-scores {
+    padding: 50px 0;
+    background-color: #11151129;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 13px 11px 26px 0px rgba(0,0,0,0.82);
+-webkit-box-shadow: 13px 11px 26px 0px rgba(0,0,0,0.82);
+-moz-box-shadow: 13px 11px 26px 0px rgba(0,0,0,0.82);
+}
+
+#save-el {
+    font-size: 30px;
+}
